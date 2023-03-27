@@ -1,0 +1,23 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>1.php</title>
+	<style type="text/css">
+</style>
+</head>
+<body>
+<?php
+$a=5;
+var_dump(++$a); //先+1後ECHO $a
+var_dump($a); //ECHO $a
+var_dump($a++); //先ECHO$a再++
+var_dump($a); //承上後，變數+1 6+1=7
+var_dump(--$a); //先-1後 echo $a 7-1=6
+var_dump($a); //echo$a=6
+var_dump($a--); //先echo$a再-- 所以還是6
+var_dump($a); //承上-1 所以6-1=5
+
+?>
+</body>
+</html>
+
