@@ -1,0 +1,19 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>1.php</title>
+	<style type="text/css">
+</style>
+</head>
+<body>
+<?php
+$a = "Hello";
+$a=$a."\nWorld!";
+echo "$a<br>";
+
+$b="Hello";
+$b .="\nWorld!";
+echo$b;
+?>
+</body>
+</html>
