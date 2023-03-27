@@ -1,0 +1,17 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>1.php</title>
+	<style type="text/css">
+</style>
+</head>
+<body>
+<?php
+$a=False;
+$b=True;
+echo"1. ";var_dump($a && !$b || $a); //False and False or False
+echo"2. ";var_dump(!$a || $b xor $a && $b); //True or True xor false and True
+echo"3. ";var_dump($a == !$b || $a && !$a xor $a && !$b); //False = False or False amd True xor False and False 因為不是F&F所以前面的被刪掉，所以只剩and true 
+?>
+</body>
+</html>
