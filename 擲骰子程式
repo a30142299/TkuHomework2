@@ -1,0 +1,22 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>1.php</title>
+	<style type="text/css">
+</style>
+</head>
+<body>
+<?php
+$x = rand(1,6);  //rand()：亂數函數 這邊用來擲骰子
+echo "點數：{$x}。<br>";
+	if ($x == 3)
+	{
+	echo "恭喜您中獎了！<br>";
+	} //如果骰子骰到3的話會出現恭喜中獎的文字
+	else{
+		echo "銘謝惠顧！<br>";
+	}
+	echo "謝謝您使用本程式";
+?>
+</body>
+</html>
