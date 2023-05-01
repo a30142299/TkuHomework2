@@ -1,0 +1,21 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>1.php</title>
+	<style type="text/css">
+</style>
+</head>
+<body>
+<form action="" method="post">
+	成績：<input type="text" name="score">
+	<input type="submit">
+</form>
+<?php
+error_reporting(0);
+$score = $_POST[score];
+echo"成績：[$score]<br>";
+echo $score>=60 ? "成績及格了。" : "很遺憾，成績未通過。";
+
+?>
+</body>
+</html>
