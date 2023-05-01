@@ -1,0 +1,43 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>1.php</title>
+	<style type="text/css">
+</style>
+</head>
+<body>
+<?php
+error_reporting(0);
+echo "<form>
+	<input type='checkbox' name='x' value='1'>流鼻水
+	<input type='checkbox' name='y' value='1'>咳嗽
+	<input type='checkbox' name='z' value='1'>發燒
+		<input type='submit'>
+
+
+</form>";
+
+$x = $_GET["x"];
+$y = $_GET["y"];
+$z = $_GET["z"];
+
+if ($x=="" && $y=="" && $z==""){
+	echo"無病，給糖果。";
+}	elseif($x=="" && $y=="" && $z=="1"){
+	echo"發燒，給紅錠";
+}	elseif($x=="" && $y=="1" && $z==""){
+	echo"咳嗽，給橙錠";
+}	elseif($x=="1" && $y=="" && $z==""){
+	echo"流鼻水，給黃錠";
+}	elseif($x=="" && $y=="1" && $z=="1"){
+	echo"咳嗽+發燒，給綠錠";
+}	elseif($x=="1" && $y=="" && $z=="1"){
+	echo"流鼻水+發燒，給藍藥";
+}	elseif($x=="1" && $y=="1" && $z==""){
+	echo"流鼻水+咳嗽，給靛藥";
+}	else{
+	echo"流鼻水+咳嗽+發燒，給紫藥";
+}
+?>
+</body>
+</html>
