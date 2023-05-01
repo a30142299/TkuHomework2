@@ -1,0 +1,22 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>1.php</title>
+	<style type="text/css">
+</style>
+</head>
+<body>
+<?php
+$a = rand(1,6);
+$b = rand(1,6);
+echo "甲：$a 點<br> 乙：$b 點<br>";
+if ($a > $b){
+	echo"贏家：甲";
+}elseif ($a < $b){
+	echo"贏家：乙";
+}else{
+	echo"甲乙平手";
+}
+?>
+</body>
+</html>
